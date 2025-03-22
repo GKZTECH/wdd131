@@ -6,6 +6,9 @@ function calculateWindChill(tempC, windKmh) {
     }
 }
 
+document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+
 // Get elements and update wind chill
 document.addEventListener("DOMContentLoaded", function () {
     let temp = 10; // Example temperature in °C
