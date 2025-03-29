@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF3E0; /* Light Beige */
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #4A148C; /* Deep Purple */
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Menu Button */
+#menu-button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    
+}
+
+/* Navigation */
+nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #4A148C;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    padding: 0;
+}
+
+nav ul.show {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #FFC107; /* Gold Accent */
+    color: #4A148C;
+}
+.res-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px; 
+}
+.label {
+    font-weight: bold;
+    color: purple;
+}
