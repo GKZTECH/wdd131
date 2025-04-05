@@ -1,0 +1,128 @@
+/* Base Reset & Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 1rem;
+  }
+  
+  /* Header and Footer */
+  header, footer {
+    background-color: #1e88e5;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer {
+    margin-top: 2rem;
+  }
+  
+  /* Main Container */
+  main {
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  }
+  
+  /* Form Layout */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Labels and Inputs */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  
+  legend {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Radio & Checkbox Options */
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  fieldset label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Submit Button */
+  input[type="submit"] {
+    background-color: #1e88e5;
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #1565c0;
+  }
+  
+  /* Star Rating Style (optional enhancement) */
+  fieldset.rating label {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  /* Responsive Enhancements */
+  @media (min-width: 600px) {
+    form {
+      gap: 2rem;
+    }
+  
+    fieldset {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    fieldset label {
+      flex: 1 1 45%;
+    }
+  }
+  
